@@ -16,7 +16,5 @@ services:
       - key: NODE_ENV
         value: production
       - key: ASDF
-        value:
-          fromGroup: "render-shared"
-        previewValue:
-          fromGroup: "render-staging"
+        fromGroup: "render-shared"
+        sync: false
