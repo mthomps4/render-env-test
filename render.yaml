@@ -17,10 +17,6 @@ services:
         value: production
       - key: ASDF
         value:
-          fromGroup:
-            name: "render-shared"
-            envVarKey: "ASDF"
+          fromGroup: "render-shared"
         previewValue:
-          fromGroup:
-            name: "render-staging"
-            envVarKey: "ASDF"
+          fromGroup: "render-staging"
