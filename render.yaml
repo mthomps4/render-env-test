@@ -16,4 +16,10 @@ services:
       - key: NODE_ENV
         value: production
       - fromGroup: "render-shared"
-        sync: false
+
+
+envVarGroups:
+  - name: render-shared
+  envVars:
+    - key: ASDF
+      sync: false
