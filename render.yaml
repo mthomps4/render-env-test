@@ -17,9 +17,8 @@ services:
         value: production
       - fromGroup: "render-shared"
 
-
 envVarGroups:
   - name: render-shared
-  envVars:
-    - key: ASDF
-      sync: false
+    envVars:
+      - key: ASDF
+        sync: false
