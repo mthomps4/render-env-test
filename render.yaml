@@ -15,6 +15,5 @@ services:
     envVars:
       - key: NODE_ENV
         value: production
-      - fromGroup:
-        name: "render-shared"
+      - fromGroup: "render-shared"
         sync: false
